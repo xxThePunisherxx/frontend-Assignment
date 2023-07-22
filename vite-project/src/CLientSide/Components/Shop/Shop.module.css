@@ -1,0 +1,118 @@
+.Shop_Wrapper {
+    padding: 5rem;
+    display: grid;
+    justify-items: center;
+    margin-top: 0;
+}
+
+.Shop_Wrapper h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-block: 50px;
+    font-family: var(--primary-font);
+}
+
+.Product_Category_Grid,
+.Product_Category_Loader_Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 95%;
+}
+
+
+.Shop_Wrapper button {
+    margin-left: 10px;
+    margin-top: 2em;
+    padding: 0.6em;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: all ease-in 300ms;
+}
+
+.Shop_Wrapper button:hover,
+.Shop_Wrapper button:focus {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+.Skel .imgDiv {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    border-radius: 20px;
+}
+
+.Skel .H1Div,
+.H2Div {
+    width: 99%;
+    height: 39px;
+    padding: 15px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    margin: 10px auto;
+    border-radius: 20px;
+
+}
+
+@keyframes Load {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+@media(width<1200px) {
+    .Shop_Wrapper {
+        padding: 3rem;
+    }
+
+    .Shop_Wrapper h1 {
+        font-size: 4rem;
+        margin-block: 20px;
+    }
+}
+
+@media(width<1300px) {
+    .Shop_Wrapper {
+        padding: 2.5rem;
+    }
+
+    .Product_Category_Grid,
+    .Product_Category_Loader_Grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media(width<800px) {
+    .Shop_Wrapper {
+        padding: 2rem;
+    }
+
+    .Shop_Wrapper h1 {
+        font-size: 3rem;
+        margin-block: 30px;
+    }
+
+    .Product_Category_Grid,
+    .Product_Category_Loader_Grid {
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}

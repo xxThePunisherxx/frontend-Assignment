@@ -1,0 +1,160 @@
+.HeroWrapper {
+    /* height: 100vh; */
+    display: grid;
+    width: 95%;
+    grid-template-columns: 50% auto;
+    gap: 10px;
+    margin: 0 auto;
+
+}
+
+
+.HeroImageWrapper {
+    position: relative;
+    background-image: url("../../../assets/Hero images/large.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.SmallImage {
+    position: absolute;
+    top: 23%;
+    left: -1%;
+    cursor: pointer;
+}
+
+.PointingArrow {
+    position: absolute;
+    top: 48%;
+    left: 0%;
+}
+
+.texts {
+    margin-top: -35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.SmallImage :hover,
+.SmallImage:focus {
+    scale: 1.01;
+}
+
+.mainHeadingWrapper {
+    padding: 5rem;
+    width: 90%;
+    display: grid;
+    align-content: space-between;
+    gap: 100px;
+}
+
+.SpringCollection {
+    position: relative;
+}
+
+.PointingArrowCollection {
+    position: absolute;
+    left: -2%;
+}
+
+.Hero_Btn {
+    font-size: 1.5rem;
+    padding: .5em 1em;
+    background-color: #f15757;
+    margin-top: 20px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #f15757;
+    transition: all ease-in 300ms;
+}
+
+.Hero_Btn:hover,
+.Hero_Btn:focus {
+    color: #f15757;
+    border: 2px solid #f15757;
+    background-color: white;
+}
+
+@media(width<1450px) {
+    .mainHeadingWrapper {
+        padding: 3rem;
+        width: 95%;
+    }
+}
+
+@media(width<1170px) {
+    .mainHeadingWrapper {
+        padding: 2.5rem;
+        width: 95%;
+        gap: 80px;
+    }
+
+    .PointingArrowCollection {
+        position: absolute;
+        left: -10%;
+    }
+}
+
+@media(width<1000px) {
+    .mainHeadingWrapper {
+        gap: 50px;
+    }
+
+    .PointingArrowCollection {
+        position: absolute;
+        left: -20%;
+    }
+
+    .SmallImage {
+        position: absolute;
+        top: 8%;
+        left: -1%;
+        cursor: pointer;
+    }
+
+    .PointingArrow {
+        top: 39%;
+        left: 0%;
+    }
+}
+
+@media(width<850px) {
+
+    .PointingArrowCollection {
+        display: none;
+    }
+
+    .SmallImage {
+        display: none;
+    }
+
+    .PointingArrow {
+        display: none;
+    }
+
+    .SpringCollection {
+        display: none;
+    }
+
+    .HeroWrapper {
+        height: 80vh;
+    }
+}
+
+@media(width<650px) {
+    .HeroWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .HeroImageWrapper,
+    .PointingArrowCollection {
+        display: none;
+    }
+
+    .mainHeadingWrapper {
+        padding: 3rem;
+        margin-top: 100px;
+    }
+}
