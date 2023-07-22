@@ -1,0 +1,28 @@
+.Product_Category_Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.SearchREsultWrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media(width<1300px) {
+
+    .Product_Category_Grid,
+    .Product_Category_Loader_Grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media(width<800px) {
+
+    .Product_Category_Grid {
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
