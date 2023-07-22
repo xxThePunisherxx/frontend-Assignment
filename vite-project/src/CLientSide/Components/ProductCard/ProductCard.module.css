@@ -1,0 +1,24 @@
+.Individual_Product_Card {
+    display: grid;
+    grid-template-rows: 300px auto;
+    transition: all ease-in .3s;
+}
+
+.Individual_Product_Card:hover,
+.Individual_Product_Card:focus {
+    scale: 1.03;
+    outline: none;
+}
+
+.Individual_Product_Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.Individual_Product_Card h2 {
+    margin-block: 10px;
+    margin-left: 10px;
+    font-family: var(--primary-font);
+}
