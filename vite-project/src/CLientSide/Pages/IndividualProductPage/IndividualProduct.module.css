@@ -1,0 +1,277 @@
+.IndividualProductPageWrapper {
+    padding: 5rem;
+}
+
+
+.ProductCard {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 30px;
+}
+
+.ProductImage img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+
+
+.MoreInfo {
+    padding: 5rem;
+}
+
+.ProductDescription h1 {
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: var(--primary-font);
+}
+
+.ProductDescription h2 {
+    font-size: 2rem;
+    margin-top: 0.2em;
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+.ProductDescription span {
+    opacity: .7;
+}
+
+.ProductDescription p {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: var(--secondary-font);
+    margin: 1em 0;
+}
+
+.Actions button {
+    margin: 1em 0;
+    padding: .5em 1.5em;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: black solid 2px;
+    color: white;
+    background-color: black;
+    font-family: var(--secondary-font);
+    transition: all ease-in 200ms;
+}
+
+.Actions button:hover,
+.Actions button:focus {
+
+    border: black solid 2px;
+    color: black;
+    background-color: white;
+}
+
+.Policies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+.Policy {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Policy h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: var(--secondary-font);
+}
+
+.Policy img {
+    width: 50px;
+}
+
+/* .SimilarProducts {
+    padding: 5rem;
+} */
+
+.SimilarProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.SimilarProducts h1 {
+    font-size: 3rem;
+}
+
+.filteredProductCardWrarpper {
+    padding: 2rem;
+}
+
+.filteredProductCardWrarpper img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.filteredProductCardTexts h2 {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+}
+
+.filteredProductCardTexts h3 {
+    font-size: 1.4rem;
+    padding-left: 0.5em;
+    font-family: var(--secondary-font);
+}
+
+.imgDiv {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    border-radius: 20px;
+}
+
+.PDiv {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    border-radius: 20px;
+}
+
+.ButtonDiv {
+    margin: 1em 0;
+    padding: .5em 1.5em;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    width: 189px;
+    height: 63px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    border-radius: 20px;
+}
+
+.imgDivS {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    border-radius: 100%;
+}
+
+.H1Div,
+.H2Div {
+    width: 100%;
+    height: 39px;
+
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.H1DivS {
+    width: 25%;
+    height: 4rem;
+
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: Load 2s infinite;
+    margin-block: 30px;
+    border-radius: 20px;
+}
+
+@keyframes Load {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+@media(width<1400px) {
+    .ProductCard {
+        grid-template-columns: 1fr;
+    }
+
+    .SimilarProductsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .IndividualProductPageWrapper,
+    .MoreInfo {
+        padding: 4rem;
+    }
+}
+
+@media(width<1000px) {
+    .ProductCard {
+        grid-template-columns: 1fr;
+    }
+
+    .SimilarProductsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .IndividualProductPageWrapper,
+    .MoreInfo {
+        padding: 3rem;
+    }
+}
+
+@media(width<750px) {
+    .ProductCard {
+        grid-template-columns: 1fr;
+    }
+
+    .SimilarProductsGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .IndividualProductPageWrapper,
+    .MoreInfo {
+        padding: 2rem;
+    }
+}
+
+@media(width<500px) {
+
+    .IndividualProductPageWrapper,
+    .MoreInfo {
+        padding: 1rem;
+    }
+}
